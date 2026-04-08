@@ -177,8 +177,10 @@ class WeirdhostLogin:
     def find_renew_button(self, page, server_id):
         """查找续期按钮 - 使用多种方法"""
         selectors = [
+            'button:has-text("연장하기")',
             'button:has-text("시간추가")',
             'button:has-text("시간 추가")',
+            '//button[contains(text(), "연장하기")]',
             '//button[contains(text(), "시간추가")]',
             '//button[contains(text(), "시간 추가")]',
         ]
