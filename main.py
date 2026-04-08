@@ -311,7 +311,7 @@ class WeirdhostLogin:
         self.log(f"🔍 调试服务器 {server_id} 的元素可见性")
         
         # 检查按钮的各种状态
-        selectors = ['button:has-text("시간추가")', 'button:has-text("시간 추가")']
+        selectors = ['button:has-text("시간추가")', 'button:has-text("시간 추가")', 'button:has-text("연장하기")']
         
         for selector in selectors:
             try:
